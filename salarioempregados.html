@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+
+<script>
+	
+function pulalinha() {
+
+document.write("<br>");
+document.write("<br>");
+
+}
+
+function mostra(frase) {
+
+document.write(frase);
+pulalinha();
+
+}
+  
+
+var quantidadefuncionarios = parseInt(prompt("Qual a quantidade de funcionarios pertencentes ao seu estabelecimento?"));
+
+var numero = 1
+
+totaldefuncionarios = 0
+
+while(numero <= quantidadefuncionarios) {
+
+var salario = parseInt(prompt("Insira o salario do seus funcionarios"))
+totaldefuncionarios = totaldefuncionarios + salario
+numero++
+
+}
+
+var totalsalario = (quantidadefuncionarios + totaldefuncionarios);
+mostra("A media de salarios de é " + totalsalario);
+
+
+  </script>
